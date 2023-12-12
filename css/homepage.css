@@ -1,0 +1,291 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: aliceblue;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 36px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-image: url('../Images/img-7JWc1wqG91G2z5qiHTHkk.jpeg'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slideshow 60s infinite;
+}
+
+h1,
+h2 {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: slideshow 60s infinite;
+    /* Add other styles for slideshow container as needed */
+}
+.slideshow .image {
+    /* Styles for each image within the slideshow */
+    /* You can define common styles for all images here */
+    /* For individual image styles, you can use inline styles in HTML or create additional classes */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes slideshow {
+    0% {
+        background-image: url('../Images/img-7JWc1wqG91G2z5qiHTHkk.jpeg');
+    }
+    33% {
+        background-image: url('../Images/img-aAYEId9XzWQrrecxRwBk3.jpeg');
+    }
+    66% {
+        background-image: url('../Images/img-HHxbzRy4PxEqdS1982puE.jpeg');
+    }
+    /* Add more keyframes for additional images */
+}
+
+nav {
+ width: 100%;
+ background: transparent;
+ border: #fff;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    /* Remove border from the bottom */
+    border-bottom: none;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    font-size: x-large;
+    text-align: center;
+    /* Remove border-right property */
+    /* border-right: 1px solid #ccc; */
+    width: 20%;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #F1F1F1;
+    padding: 10px 0;
+    transition: color 0.3s; /* Adding smooth color transition */
+}
+nav ul li a:hover {
+    color: #000; /* Changing the text color when hovered */
+    /* Remove border-right property */
+    /* border-right: 1px solid #000; */
+    display: inline-block;
+    height: 29px;
+    margin-right: 22px;
+    text-align: center;
+    width: 268px;
+    background-color: transparent; /* Removing background color */
+}
+
+.content {
+  padding: 13%;
+}
+
+
+
+.footer {
+    background-color: #2B2B2B;
+    bottom: 0;
+    color: #F1F1F1;
+    clear: both;
+    font-family: 'snell roundhand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: -8px;
+    position: fixed;
+    width: 100%;
+}
+
+ul li a:hover{
+  background-color: #F1F1F1;
+  border-right: 1px solid #000;
+  color: #000;
+	display: inline-block;
+  height: 29px;
+	margin-right: 22px;
+	text-align: center;
+  width: 268px;
+}
+
+ ul li a.logo {
+    background: url('../images/barberlogo.png');
+    background-repeat:no-repeat;
+    height:140px;
+    display:block;
+    padding: 0;
+}
+
+/** { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body{
+	font-family: sans-serif;
+	padding: 2rem 4rem;
+	background-color: #f5f5f5;
+}*/
+
+section{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.ease-all{
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+/* Social Icons */
+
+.social.animated {
+  float: right;
+	height: 45px;
+  list-style-type: none;
+  margin: -45px;
+  padding: 0;
+  text-align: center;
+
+}
+
+.social li {
+  border-right: none;
+}
+
+.social li a {
+  background-color: #F1F1F1;
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 22px;
+	margin-right: 15px;
+	text-align: center;
+	/*padding-top: 13px;*/
+
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-o-border-radius:20px;
+	-ms-border-radius:20px;
+	border-radius:20px;
+
+	/*background-color: #222;*/
+	-webkit-box-shadow: inset 0 0 0 40px #222;
+	-moz-box-shadow: inset 0 0 0 40px #222;
+	-o-box-shadow: inset 0 0 0 40px #222;
+	-ms-box-shadow: inset 0 0 0 40px #222;
+	box-shadow: inset 0 0 0 40px #222;
+
+	color: #fff;
+}
+
+.social li a:hover {
+  width: 40px;
+  height: 22px;
+	-webkit-box-shadow: inset 0 0 0 3px #222;
+	-moz-box-shadow: inset 0 0 0 3px #222;
+	-o-box-shadow: inset 0 0 0 3px #222;
+	-ms-box-shadow: inset 0 0 0 3px #222;
+	box-shadow: inset 0 0 0 3px #222;
+
+	color: #222;
+}
+
+.center-wrap {
+	float: right;
+}
+
+.button {
+	position: relative;
+	display: block;
+	background: #000 center center no-repeat;
+	background-size: cover;
+	border: 2px solid #fff;
+  font-size: medium;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	text-align: center;
+	max-width: 270px;
+	min-width: 200px;
+	overflow: hidden;
+	-webkit-transition: border 1s cubic-bezier(0.19,1,.22,1),color .6s cubic-bezier(0.19,1,.22,1);
+	transition: border 1s cubic-bezier(0.19,1,.22,1), color .6s cubic-bezier(0.19,1,.22,1), background 5s cubic-bezier(0.19,1,.22,1);
+}
+
+.button a {
+	color: #fff;
+	font-family: 'Varela Round';
+	text-decoration: none;
+}
+
+.button .mask {
+	background: #fff;
+	background: rgba(255,255,255,0.5);
+}
+
+.button .mask {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 100px;
+	-webkit-transform: translate3d(-120%,-50px,0) rotate3d(0,0,1,45deg);
+	transform: translate3d(-120%,-50px,0) rotate3d(0,0,1,45deg);
+	-webkit-transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+	transition: all 1.1s cubic-bezier(0.19,1,.22,1);
+}
+
+.button:hover {
+	border-color: #fff;
+	/* box-shadow: 0 0 5px rgba(255,245,245,0.8); */
+	/* background-image: url('http://cuinine.com/img/codepen/savvy.jpg'); */
+}
+
+.button:hover a {
+	color: #fff;
+}
+
+.button:hover .mask {
+	background: #fff;
+	-webkit-transform: translate3d(120%,-100px,0) rotate3d(0,0,1,90deg);
+	transform: translate3d(120%,-100px,0) rotate3d(0,0,1,90deg);
+}
